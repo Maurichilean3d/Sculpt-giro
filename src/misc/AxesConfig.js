@@ -9,7 +9,7 @@
  */
 
 import getOptionsURL from 'misc/getOptionsURL';
-import { vec3 } from 'math3d/three-compat';
+import { vec3 } from 'gl-matrix';
 import { Vector3 } from 'three';
 
 const _UP_Y = vec3.fromValues(0.0, 1.0, 0.0);
