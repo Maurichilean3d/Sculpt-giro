@@ -2,7 +2,7 @@
  * Lógica de mallas 3D editables.
  * Gestiona geometría, atributos y operaciones que afectan la forma del modelo.
  */
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import Utils from 'misc/Utils';
 import Geometry from 'math3d/Geometry';
 import Smooth from 'editing/tools/Smooth';

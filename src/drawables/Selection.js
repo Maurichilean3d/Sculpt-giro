@@ -2,7 +2,7 @@
  * Parte del código de SculptGL.
  * Implementa funciones o clases internas usadas por la aplicación durante su ejecución.
  */
-import { mat3, mat4, vec3 } from 'gl-matrix';
+import { mat3, mat4, vec3 } from 'math3d/three-compat';
 import Buffer from 'render/Buffer';
 import ShaderLib from 'render/ShaderLib';
 import Enums from 'misc/Enums';
