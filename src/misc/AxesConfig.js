@@ -14,6 +14,8 @@ import { Vector3 } from 'three';
 
 const _UP_Y = vec3.fromValues(0.0, 1.0, 0.0);
 const _UP_Z = vec3.fromValues(0.0, 0.0, 1.0);
+const _UP_Y_THREE = new Vector3(0.0, 1.0, 0.0);
+const _UP_Z_THREE = new Vector3(0.0, 0.0, 1.0);
 
 export function isZUp() {
   const opts = getOptionsURL();
