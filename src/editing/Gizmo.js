@@ -2,7 +2,7 @@
  * Parte del código de SculptGL.
  * Implementa funciones o clases internas usadas por la aplicación durante su ejecución.
  */
-import { vec2, vec3, mat4, quat } from 'math3d/three-compat';
+import { vec2, vec3, mat3, mat4, quat } from 'math3d/three-compat';
 import Primitives from 'drawables/Primitives';
 import Enums from 'misc/Enums';
 import Geometry from 'math3d/Geometry';
@@ -312,9 +312,9 @@ class Gizmo {
     }
 
     var nWorld = vec3.fromValues(normal[0], normal[1], normal[2]);
-    var normalMatrix = mat4.clone(mesh.getMatrix());
-    normalMatrix[12] = normalMatrix[13] = normalMatrix[14] = 0.0;
-    vec3.transformMat4(nWorld, nWorld, normalMatrix);
+    var normalMatrix = mat3.create();
+    mat3.normalFromMat4(normalMatrix, mesh.getMatrix());
+    vec3.transformMat3(nWorld, nWorld, normalMatrix);
     vec3.normalize(nWorld, nWorld);
 
     // Usar los ejes del mesh en lugar de la posición de la cámara
