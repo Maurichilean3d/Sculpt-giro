@@ -9,7 +9,7 @@
  */
 
 import getOptionsURL from 'misc/getOptionsURL';
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import { Vector3 } from 'three';
 
 const _UP_Y = vec3.fromValues(0.0, 1.0, 0.0);
@@ -29,5 +29,10 @@ export function getUpVector(out = vec3.create()) {
 }
 
 export function getUpVectorThree(out = new Vector3()) {
-  return out.copy(isZUp() ? _UP_Z_THREE : _UP_Y_THREE);
+  if (isZUp()) {
+    out.set(0.0, 0.0, 1.0);
+  } else {
+    out.set(0.0, 1.0, 0.0);
+  }
+  return out;
 }

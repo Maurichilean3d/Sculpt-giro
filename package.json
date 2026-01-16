@@ -8,7 +8,6 @@
   "main": "main.js",
   "dependencies": {
     "file-saver": "^2.0.2",
-    "gl-matrix": "^3.1.0",
     "hammerjs": "^2.0.8",
     "http-server": "^14.1.1",
     "raw-loader": "^4.0.2",

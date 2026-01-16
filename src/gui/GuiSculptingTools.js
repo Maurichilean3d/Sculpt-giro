@@ -2,7 +2,7 @@
  * Código de la interfaz (GUI) de SculptGL.
  * Define paneles, menús y controles para modificar herramientas y opciones.
  */
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import Tools from 'editing/tools/Tools';
 import TR from 'gui/GuiTR';
 import Picking from 'math3d/Picking';

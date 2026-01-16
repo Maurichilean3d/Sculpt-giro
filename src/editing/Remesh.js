@@ -2,7 +2,7 @@
  * Parte del código de SculptGL.
  * Implementa funciones o clases internas usadas por la aplicación durante su ejecución.
  */
-import { vec3, mat4 } from 'gl-matrix';
+import { vec3, mat4 } from 'math3d/three-compat';
 import HoleFilling from 'editing/HoleFilling';
 import SurfaceNets from 'editing/SurfaceNets';
 import MarchingCubes from 'editing/MarchingCubes';

@@ -2,7 +2,7 @@
  * Módulo de renderizado WebGL de SculptGL.
  * Dibuja la escena 3D y administra shaders, buffers y el pipeline de dibujo.
  */
-import { mat3 } from 'gl-matrix';
+import { mat3 } from 'math3d/three-compat';
 import getOptionsURL from 'misc/getOptionsURL';
 import ShaderBase from 'render/shaders/ShaderBase';
 import pbrGLSL from 'render/shaders/glsl/pbr.glsl';

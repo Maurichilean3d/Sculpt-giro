@@ -2,7 +2,7 @@
  * Herramientas de esculpido y pinceles.
  * Aplica deformaciones al modelo según la interacción del usuario y parámetros.
  */
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import Tablet from 'misc/Tablet';
 import SculptBase from 'editing/tools/SculptBase';
 import Flatten from 'editing/tools/Flatten';

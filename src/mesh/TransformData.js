@@ -2,7 +2,7 @@
  * Lógica de mallas 3D editables.
  * Gestiona geometría, atributos y operaciones que afectan la forma del modelo.
  */
-import { vec3, mat3, mat4 } from 'gl-matrix';
+import { vec3, mat3, mat4 } from 'math3d/three-compat';
 
 var TransformData = function () {
   return {
