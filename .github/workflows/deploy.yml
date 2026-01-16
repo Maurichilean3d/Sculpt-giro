@@ -1,0 +1,27 @@
+name: Deploy SculptGL to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install and Build
+        run: |
+          npm install
+          NODE_OPTIONS=--openssl-legacy-provider npm run release
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: . # Desplegar toda la raíz (incluye index.html y la carpeta app/)
+          branch: gh-pages
+          clean: true
