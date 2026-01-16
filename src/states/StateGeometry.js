@@ -2,7 +2,7 @@
  * Parte del código de SculptGL.
  * Implementa funciones o clases internas usadas por la aplicación durante su ejecución.
  */
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import Utils from 'misc/Utils';
 
 class StateGeometry {

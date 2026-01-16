@@ -3,7 +3,7 @@
  * Implementa funciones o clases internas usadas por la aplicación durante su ejecución.
  */
 import 'misc/Polyfill';
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import { Manager as HammerManager, Pan, Pinch, Tap } from 'hammerjs';
 import Tablet from 'misc/Tablet';
 import Enums from 'misc/Enums';
