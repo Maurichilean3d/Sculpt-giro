@@ -18,7 +18,10 @@ Define layout y apariencia visual de paneles, botones y elementos de la UI.
   user-select: none;
 }
 
+html,
 body {
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   margin: 0;
 }
