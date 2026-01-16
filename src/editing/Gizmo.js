@@ -859,12 +859,15 @@ class Gizmo {
     main.render();
   }
 
-  _scaleRotateEditMatrix(edit, i) {
-    mat4.mul(edit, this._editTrans, edit);
-    mat4.mul(edit, edit, this._editTransInv);
+_scaleRotateEditMatrix(edit, i) {
+  mat4.mul(edit, this._editTrans, edit);
+  mat4.mul(edit, edit, this._editTransInv);
 
-    mat4.mul(edit, this._editScaleRotInv[i], edit);
-    mat4.mul(edit, edit, this._editScaleRot[i]);
+  // CAMBIO: invertir el orden (B * edit * B^-1)
+  mat4.mul(edit, this._editScaleRot[i], edit);
+  mat4.mul(edit, edit, this._editScaleRotInv[i]);
+}
+
   }
 
   addGizmoToScene(scene) {
