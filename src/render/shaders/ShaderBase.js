@@ -2,7 +2,7 @@
  * Módulo de renderizado WebGL de SculptGL.
  * Dibuja la escena 3D y administra shaders, buffers y el pipeline de dibujo.
  */
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import getOptionsURL from 'misc/getOptionsURL';
 import Utils from 'misc/Utils';
 import Attribute from 'render/Attribute';

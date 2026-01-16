@@ -2,7 +2,7 @@
  * Control de cámara y navegación en la escena.
  * Convierte entradas del usuario en rotación, zoom y desplazamiento de la vista.
  */
-import { vec2, vec3, mat3, mat4, quat } from 'gl-matrix';
+import { vec2, vec3, mat3, mat4, quat } from 'math3d/three-compat';
 import getOptionsURL from 'misc/getOptionsURL';
 import { getUpVector } from 'misc/AxesConfig';
 import Enums from 'misc/Enums';

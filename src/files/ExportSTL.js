@@ -2,7 +2,7 @@
  * Entrada/salida de archivos del modelo.
  * Permite cargar o exportar formatos y convertir datos para usarlos en la escena.
  */
-import { vec3 } from 'gl-matrix';
+import { vec3 } from 'math3d/three-compat';
 import Remesh from 'editing/Remesh';
 
 var Export = {};
