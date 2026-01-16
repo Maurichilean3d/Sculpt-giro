@@ -21,6 +21,7 @@ yarn # npm install
 yarn dev # npm run dev (npm run release for final build, npm run website should not be used)
 // visit app/index.html
 ```
+Use npm or yarn with the committed `package-lock.json` to keep dependency installs consistent during deploys; a `pnpm-lock.yaml` is intentionally omitted to avoid pnpm auto-detection in CI.
 
 For standalone :
 ```
